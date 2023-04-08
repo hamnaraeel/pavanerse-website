@@ -17,7 +17,8 @@ export default function RootLayout({
   return (
     <html lang="en">
       <Head>
-        <link rel="shortcut icon" href="/static/favicon.png" />
+        <link rel="icon" href="/static/favicon.png" />
+        <link rel="icon" href="/favicon.png" />
       </Head>
       <body>{children}</body>
     </html>
