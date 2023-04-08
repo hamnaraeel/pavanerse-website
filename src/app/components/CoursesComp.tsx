@@ -1,6 +1,3 @@
-{
-  /* @ts-expect-error Async Server Component */
-}
 import React from "react";
 import {
   ArrowRightIcon,
