@@ -1,7 +1,4 @@
 import React from "react";
-{
-  /* @ts-expect-error Async Server Component */
-}
 
 async function getBlogs() {
   const res = await fetch(

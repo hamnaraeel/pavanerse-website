@@ -1,10 +1,6 @@
 import React from "react";
 import Image from "next/image";
 
-{
-  /* @ts-expect-error Async Server Component */
-}
-
 async function getBlogs() {
   const res = await fetch(
     `https://cdn.contentful.com/spaces/w86v54uruq3d/entries?access_token=z4QbYhhNMAhOcwbarn6O1lxuE7nsiUrdrKDka8mmwHc&content_type=mainPage`,

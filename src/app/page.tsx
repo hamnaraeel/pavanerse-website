@@ -1,6 +1,3 @@
-// {
-//   /* @ts-expect-error Async Server Component */
-// }
 // import Image from "next/image";
 // import { Inter } from "next/font/google";
 // import { documentToReactComponents } from "@contentful/rich-text-react-renderer";
@@ -76,8 +73,12 @@ async function Home() {
   return (
     <>
       <Navbar />
+      {/* @ts-expect-error Async Server Component */}
       <HeroSection />
+      {/* @ts-expect-error Async Server Component */}
       <Details />
+      {/* @ts-expect-error Async Server Component */}
+
       <Courses />
       <Instructor />
       <Footer />

@@ -12,6 +12,8 @@ function About() {
         title="About PIAIC"
         subtitle="Presidential Initiative for Artificial Intelligence and Computing (PIAIC)"
       />
+      {/* @ts-expect-error Async Server Component */}
+
       <AboutComp />
       <Footer />
     </>

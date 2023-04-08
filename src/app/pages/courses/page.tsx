@@ -13,8 +13,12 @@ function Courses() {
       {/* <h1>Hello</h1> */}
       <Navbar />
       <MainBG title="Courses" subtitle="" />
+      {/* @ts-expect-error Async Server Component */}
+
       <CommonSyllabus />
       <CourseDetail />
+      {/* @ts-expect-error Async Server Component */}
+
       <CoursesComp />
       <Footer />
     </>
