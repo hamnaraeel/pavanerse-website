@@ -1,7 +1,5 @@
 import React from "react";
-{
-  /* @ts-expect-error Async Server Component */
-}
+
 import Image from "next/image";
 import { documentToReactComponents } from "@contentful/rich-text-react-renderer";
 
