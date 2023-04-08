@@ -1,5 +1,4 @@
 "use client";
-
 import React, { useEffect, useState } from "react";
 
 function CourseDetail() {
@@ -30,7 +29,7 @@ function CourseDetail() {
               className={`tab ${activeTab === index ? "active" : ""}`}
               onClick={() => setActiveTab(index)}
             >
-              <div className="px-2 py-0 font-medium text-lg uppercase mb-0">
+              <div className="px-0.5 sm:px-1 md:px-2 py-0 font-medium text-xs sm:text-sm md:text-lg uppercase mb-0">
                 {item.title}
               </div>
             </div>
@@ -42,10 +41,10 @@ function CourseDetail() {
               key={index}
               className={`tab-pane ${activeTab === index ? "active" : ""}`}
             >
-              <div className="flex w-10/12 mx-auto pt-8">
-                <div className="w-6/12 flex flex-col gap-4 p-6 pt-16 pb-8 bg-gray-100 rounded-tr-2xl rounded-br-2xl">
+              <div className="flex flex-col lg:flex-row gap-8 lg:gap-0 w-10/12 mx-auto pt-8">
+                <div className="w-full lg:w-6/12 flex flex-col gap-4 p-6 pt-16 pb-8 bg-gray-100 lg:rounded-tr-2xl rounded-br-2xl rounded-tr-none rounded-bl-2xl">
                   <div className="w-10/12 mx-auto">
-                    <h1 className="text-4xl font-bold mb-4 text-black uppercase">
+                    <h1 className="text-2xl md:text-4xl font-bold mb-4 text-black uppercase">
                       {item.courseName}
                     </h1>
                     <p className="text-medium text-lg w-10/12 text-black">
@@ -53,14 +52,14 @@ function CourseDetail() {
                     </p>
                   </div>
                 </div>
-                <div className="w-6/12 h-full flex items-center">
-                  <div className="grid grid-cols-2 w-10/12 m-auto flex justify-center gap-4">
+                <div className="w-full lg:w-6/12 h-full flex justify-center items-center">
+                  <div className="grid  grid-cols-1 md:grid-cols-2 w-11/12 m-auto lg:ml-auto flex justify-center gap-4">
                     {item.quarters &&
                       Object.values(item.quarters).map(
                         (quarter: any, index: number) => (
                           <div
                             key={index}
-                            className="col-span-1 mb-2 shadow-box p-8 bg-slate-100 border-t-4 border-black max-w-[20rem]"
+                            className="col-span-1 mb-2 shadow-box p-8 bg-slate-100 border-t-4 border-black lg:max-w-[20rem]"
                           >
                             <h2 className="text-xl font-bold mb-2 uppercase text-black">
                               {quarter.title}

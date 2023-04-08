@@ -5,10 +5,10 @@ function Footer() {
       <div className="bg-black text-white">
         <div className="w-10/12 m-auto py-16">
           <div className="grid grid-cols-6 flex">
-            <div className="col-span-2 w-5/6 flex flex-col gap-4 my-auto">
+            <div className="col-span-4 md:col-span-2 w-5/6 flex flex-col gap-4 my-auto mb-8">
               <img
                 className="block h-8 mr-auto"
-                src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=500"
+                src="/favicon.png"
                 alt="Your Company"
               />
               <p className="text-white text-sm">
@@ -19,8 +19,8 @@ function Footer() {
                 All right reserved by Hamnaraeel
               </p>
             </div>
-            <div className="grid grid-cols-4 col-span-4">
-              <div className="col-span-1 pr-2">
+            <div className="grid grid-cols-4 col-span-6 md:col-span-4">
+              <div className="col-span-4 sm:col-span-2 md:col-span-1 mb-4 pr-2">
                 <h1 className="font-bold text-md text-white mb-3">Class</h1>
                 <div className="flex flex-col text-sm font-normal gap-1 text-gray-300">
                   <a href="">Web 3.0 Blockchain...</a>
@@ -29,7 +29,7 @@ function Footer() {
                   <a href="">Ambient Computing...</a>
                 </div>
               </div>
-              <div className="col-span-1 px-2">
+              <div className="col-span-4 sm:col-span-2 md:col-span-1 mb-4 sm:px-2">
                 <h1 className="font-bold text-md text-white mb-3">
                   Our Company
                 </h1>
@@ -39,14 +39,14 @@ function Footer() {
                   <a href="">About Us</a>
                 </div>
               </div>
-              <div className="col-span-1 px-2">
+              <div className="col-span-4 sm:col-span-2 md:col-span-1 mb-4 md:px-2">
                 <h1 className="font-bold text-md text-white mb-3">Legal</h1>
                 <div className="flex flex-col text-sm font-normal gap-1 text-gray-300">
                   <a href="">Privacy policy</a>
                   <a href="">Terms & Conditions</a>
                 </div>
               </div>
-              <div className="col-span-1 pl-2">
+              <div className="col-span-4 sm:col-span-2 md:col-span-1 mb-4 sm:pl-2">
                 <h1 className="font-bold text-md text-white mb-3">Follow us</h1>
                 <p className="text-sm text-gray-300">
                   Lorem ipsum dolor sit, amet consectetur elit.
